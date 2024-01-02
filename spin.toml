@@ -13,7 +13,6 @@ component = "sillydemo"
 [component.sillydemo]
 source = "main.wasm"
 allowed_outbound_hosts = []
-sqlite_databases = ["main"]
 
 [component.sillydemo.build]
 command = "tinygo build -target=wasi -gc=leaking -no-debug -o main.wasm main.go"
